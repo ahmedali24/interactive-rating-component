@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import thankYou from "../images/illustration-thank-you.svg";
 
-const ThankYou = ({ rate }) => {
+const ThankYou = ({ rate, setIsSubmitted }) => {
   return (
     <div className="card">
       <div className="thankyou">
@@ -15,6 +15,9 @@ const ThankYou = ({ rate }) => {
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
         </p>
+        <button className="back" onClick={() => setIsSubmitted(false)}>
+          Go Back
+        </button>
       </div>
     </div>
   );
