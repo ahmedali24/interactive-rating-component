@@ -12,7 +12,7 @@ function App() {
       {!isSubmitted && (
         <Rating setIsSubmited={setIsSubmited} setRate={setRate} />
       )}
-      {isSubmitted && <ThankYou rate={rate} />}
+      {isSubmitted && <ThankYou rate={rate} setIsSubmitted={setIsSubmited} />}
     </div>
   );
 }
