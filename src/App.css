@@ -101,6 +101,11 @@
   cursor: pointer;
 }
 
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
 /* styles for thank you card */
 
 .thankyou {
@@ -143,4 +148,9 @@
   font-size: 15px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+.back:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
